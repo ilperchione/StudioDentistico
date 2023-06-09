@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="inserimentoPanel" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studiodentistico.StudioController">
+   <children>
+      <Label layoutX="42.0" layoutY="119.0" style="-fx-border-color: black;" text=" Nome: ">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font></Label>
+      <Label layoutX="42.0" layoutY="213.0" style="-fx-border-color: black;" text=" Patologia: " />
+      <Label layoutX="42.0" layoutY="74.0" style="-fx-border-color: black;" text=" Cognome: ">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font></Label>
+      <Label layoutX="42.0" layoutY="169.0" style="-fx-border-color: black;" text=" Data: ">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font></Label>
+      <Text layoutX="196.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inserimento Paziente" underline="true">
+         <font>
+            <Font name="Bell MT" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtCognome" layoutX="121.0" layoutY="70.0" prefHeight="26.0" prefWidth="435.0" style="-fx-border-color: black;" />
+      <TextField fx:id="txtNome" layoutX="122.0" layoutY="114.0" prefHeight="26.0" prefWidth="435.0" style="-fx-border-color: black;" />
+      <TextArea fx:id="txtPatologia" layoutX="121.0" layoutY="213.0" prefHeight="110.0" prefWidth="435.0" style="-fx-border-color: black;" />
+      <DatePicker fx:id="dateData" layoutX="122.0" layoutY="165.0" prefHeight="26.0" prefWidth="435.0" style="-fx-border-color: black;" />
+      <Button layoutX="268.0" layoutY="347.0" mnemonicParsing="false" onAction="#salva" style="-fx-border-color: black;" text="Salva">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font></Button>
+      <Button layoutX="143.0" layoutY="351.0" mnemonicParsing="false" onAction="#rimuovi" style="-fx-border-color: black;" text="Rimuovi">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font></Button>
+      <Button layoutX="388.0" layoutY="351.0" mnemonicParsing="false" onAction="#esci" style="-fx-border-color: black;" text="Esci">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

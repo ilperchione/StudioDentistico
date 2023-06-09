@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studiodentistico.StudioController">
+   <top>
+      <MenuBar style="-fx-border-color: black; -fx-border-width: 2;" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Studio">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onInserimentoPazienteAction" text="Inserimento Paziente" />
+                  <MenuItem mnemonicParsing="false" onAction="#onAppuntamentiPazientiAction" text="Tutti Gli Appuntamenti" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Informazioni">
+            <items>
+              <MenuItem mnemonicParsing="false" text="info" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Assistenza">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Richiedi Aiuto" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Utente">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Dott. Palumbo" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Studio Dentistico" underline="true" wrappingWidth="397.9375" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Monotype Corsiva" size="64.0" />
+         </font>
+      </Text>
+   </center>
+</BorderPane>
